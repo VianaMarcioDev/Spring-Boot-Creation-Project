@@ -16,8 +16,13 @@ import java.util.List;
 @Log4j2
 public class AnimeController {
 
-    @Autowired
+
     private DateUtil dateUtil;
+
+    public AnimeController(DateUtil dateUtil) {
+        this.dateUtil = dateUtil;
+    }
+
     @GetMapping(path = "list")
     public List<Anime> list(){
         log.info(dateUtil.formatlocalDateTimeToDatabaseStyle(LocalDateTime.now()));
