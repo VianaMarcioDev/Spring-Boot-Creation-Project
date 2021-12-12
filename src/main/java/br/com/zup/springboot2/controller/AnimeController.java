@@ -1,4 +1,4 @@
-package controller;
+package br.com.zup.springboot2.controller;
 
 import br.com.zup.springboot2.domain.Anime;
 import org.springframework.web.bind.annotation.GetMapping;
