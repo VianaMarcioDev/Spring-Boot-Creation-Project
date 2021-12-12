@@ -1,7 +1,11 @@
 package br.com.zup.springboot2.util;
 
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
+
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+
 
 public class DateUtil {
 
